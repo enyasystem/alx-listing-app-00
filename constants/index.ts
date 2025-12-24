@@ -1,2 +1,23 @@
-export const SITE_TITLE = 'ALX Listing App'
-export const API_BASE = '/api'
+import { PropertyProps } from "../interfaces";
+
+export const PROPERTYLISTIINGSAMPLE: PropertyProps[] = [
+    {
+        name: "Villa Ocean Breeze",
+        address: {
+            state: "Seminyak",
+            city: "Bali",
+            country: "Indonesia",
+        },
+        rating: 4.8,
+        category: ["Luxury Villa", "Pool", "Free Parking"],
+        price: 3200,
+        offers: {
+            bed: "3",
+            shower: "3",
+            occupants: "4-6",
+        },
+        images: "https://example.com/image1.jpg",
+        discount: ""        
+    },
+    ...
+],
